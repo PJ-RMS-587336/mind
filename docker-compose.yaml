@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  workspace:
+    container_name: mindsdb_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
+    ports:
+      - "47334:47334"
+      - "47335:47335"

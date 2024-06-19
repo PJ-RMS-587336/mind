@@ -1,0 +1,3 @@
+#!/bin/sh
+
+alias up="docker compose up -d"
